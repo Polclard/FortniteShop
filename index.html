@@ -88,7 +88,45 @@
 
     <div id="cont" class="container">
     </div>
+    <hr>
+    <h1 style="text-align: center;">Time until new items arrive in the item shop:</h1>
+    <h1 style="text-align: center;" id="demo"></p>
+    <hr>
 
+    <script>
+    // Set the date we're counting down to
+      const today1 = new Date()
+      const tomorrow1= new Date(today1)
+      tomorrow1.setDate(tomorrow1.getDate() + 1)
+      tomorrow1.setHours(1,0,0);
+      console.log(tomorrow1);
+    
+    var countDownDate = new Date(tomorrow1).getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML =  hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      
+    }, 1000);
+    </script>
+  
 </body>
 <script src="prv.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
