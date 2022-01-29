@@ -22,3 +22,8 @@
     font-weight: bold;
     margin: inherit;
 }
+
+.top-timer{
+    float: right;
+    display: block;
+}
