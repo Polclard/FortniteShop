@@ -1,5 +1,5 @@
 const Http = new XMLHttpRequest();
-const url = "https://fortnite-api.theapinetwork.com/store/get";
+const url = "https://fortnite-api.com/v2/shop/br";
 Http.open("GET", url)
 Http.send();
 
