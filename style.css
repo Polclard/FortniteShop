@@ -1,7 +1,11 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 .img-edited{
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     border: 5px solid black;
 }
 
@@ -26,4 +30,16 @@
 .top-timer{
     float: right;
     display: block;
+}
+
+.footer{
+    background-color: rgb(81, 120, 144);
+    height: 100%;
+}
+
+.header{
+    background-color: rgb(81, 120, 144);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
 }
