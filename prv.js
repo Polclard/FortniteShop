@@ -10,7 +10,6 @@ Http.onload = () => {
     let items = obj["data"]["br"]; // Adapted to new JSON format
     // console.log(items);
     let ct = 0;
-    items = items[]
 
     items.forEach(element => {
         let nameOfItem = element["name"];
